@@ -88,7 +88,7 @@ export default function GroenGebouwSalesTool() {
           <header className="mb-12 pb-8" style={{ borderBottom: '1px solid var(--rule)' }}>
             <div className="flex items-baseline gap-3 mb-3">
               <div style={{ width: 32, height: 4, background: 'var(--accent)' }}></div>
-              <span className="gg-label text-xs" style={{ color: 'var(--ink-soft)' }}>GroenGebouw · Sales Enablement</span>
+              <span className="gg-label text-xs" style={{ color: 'var(--ink-soft)' }}>Sales Enablement</span>
             </div>
             <h1 className="gg-display text-5xl md:text-6xl font-semibold leading-tight leading-none">
               Warmtepomp <em style={{ color: 'var(--green)' }}>vs.</em> Gasketel
@@ -264,7 +264,7 @@ export default function GroenGebouwSalesTool() {
           {/* ===== FOOTER ===== */}
           <footer className="pt-6 text-xs" style={{ borderTop: '1px solid var(--rule)', color: 'var(--ink-soft)' }}>
             <div className="flex flex-wrap justify-between gap-4">
-              <span>GroenGebouw · Interne sales tool · Cijfers indicatief, altijd valideren met gebouwgegevens.</span>
+              <span>Interne sales tool · Cijfers indicatief, altijd valideren met gebouwgegevens.</span>
               <span className="gg-mono">v1.0 · 2026</span>
             </div>
           </footer>

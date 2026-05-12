@@ -286,7 +286,7 @@ function SideBySideDiagram() {
       <path d="M 200 30 L 395 30 L 400 41 L 395 52 L 200 52 Z" fill="#E84545" />
       <text x="298" y="46" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Verlies</text>
 
-      <path d="M 200 52 L 395 52 L 400 116 L 395 180 L 200 180 Z" fill="#2DBA5C" />
+      <path d="M 200 52 L 395 52 L 400 116 L 395 180 L 200 180 Z" fill="#2E8055" />
       <text x="298" y="120" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Warmte</text>
 
       {/* === WARMTEPOMP (right) === */}
@@ -294,14 +294,14 @@ function SideBySideDiagram() {
       <text x="600" y="74" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="17" fontWeight="500" fill="#0E1A14">Omgevings-</text>
       <text x="600" y="94" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="17" fontWeight="500" fill="#0E1A14">warmte</text>
 
-      <rect x="510" y="130" width="180" height="50" fill="#2E8055" />
+      <rect x="510" y="130" width="180" height="50" fill="#2DBA5C" />
       <text x="600" y="151" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Groene</text>
       <text x="600" y="169" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">elektriciteit</text>
 
       <path d="M 690 30 L 885 30 L 890 41 L 885 52 L 690 52 Z" fill="#E84545" />
       <text x="788" y="46" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Verlies</text>
 
-      <path d="M 690 52 L 885 52 L 890 116 L 885 180 L 690 180 Z" fill="#2DBA5C" />
+      <path d="M 690 52 L 885 52 L 890 116 L 885 180 L 690 180 Z" fill="#2E8055" />
       <text x="788" y="120" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Warmte</text>
 
       {/* === BOTTOM LABELS === */}
