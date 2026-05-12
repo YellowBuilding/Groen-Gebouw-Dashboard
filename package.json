@@ -1,0 +1,16 @@
+{
+  "name": "groen-dashboard",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "lucide-react": "^0.400.0"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  }
+}
