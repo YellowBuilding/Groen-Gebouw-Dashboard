@@ -85,26 +85,26 @@ export default function GroenGebouwSalesTool() {
         <div className="max-w-6xl mx-auto">
 
           {/* ===== HEADER ===== */}
-          <header className="mb-10 pb-6" style={{ borderBottom: '1px solid var(--rule)' }}>
-            <div className="flex items-baseline gap-3 mb-2">
+          <header className="mb-12 pb-8" style={{ borderBottom: '1px solid var(--rule)' }}>
+            <div className="flex items-baseline gap-3 mb-3">
               <div style={{ width: 32, height: 4, background: 'var(--accent)' }}></div>
               <span className="gg-label text-xs" style={{ color: 'var(--ink-soft)' }}>GroenGebouw · Sales Enablement</span>
             </div>
             <h1 className="gg-display text-5xl md:text-6xl font-semibold leading-tight leading-none">
               Warmtepomp <em style={{ color: 'var(--green)' }}>vs.</em> Gasketel
             </h1>
-            <p className="mt-3 text-base leading-7 max-w-2xl" style={{ color: 'var(--ink-soft)' }}>
+            <p className="mt-4 text-base leading-7 leading-7 max-w-2xl" style={{ color: 'var(--ink-soft)' }}>
               De business case van het draaien van een warmtepomp versus gasketel.
             </p>
           </header>
 
           {/* ===== HERO VISUAL: SIDE-BY-SIDE COMPARISON ===== */}
-          <section className="mb-20">
+          <section className="mb-30">
             <div className="gg-label text-xs mb-4" style={{ color: 'var(--ink-soft)' }}>01 · Het verschil in één plaatje</div>
             <div className="p-8 md:p-12" style={{ background: '#0E1A14' }}>
               <SideBySideDiagram />
               <div className="mt-8 pt-6" style={{ borderTop: '1px solid #2A3530' }}>
-                <p className="text-sm leading-relaxed max-w-3xl" style={{ color: '#C9D1CD' }}>
+                <p className="text-sm leading-7 max-w-3xl" style={{ color: '#C9D1CD' }}>
                   <strong style={{ color: 'white' }}>Beide systemen leveren dezelfde warmte.</strong> Bij de warmtepomp betaal je alleen voor de dunne donkergroene strook — groene elektriciteit. De rest komt gratis uit de omgeving. Daarom: 3-4× zo efficiënt op de energierekening.
                 </p>
               </div>
@@ -112,7 +112,7 @@ export default function GroenGebouwSalesTool() {
           </section>
 
           {/* ===== DASHBOARD: €/kWh warmte ===== */}
-          <section className="mb-20">
+          <section className="mb-30">
             <div className="gg-label text-xs mb-4" style={{ color: 'var(--ink-soft)' }}>02 · Dashboard — kosten per kWh warmte</div>
             <div className="gg-card p-8 md:p-12">
 
@@ -135,8 +135,8 @@ export default function GroenGebouwSalesTool() {
                   hint="Zakelijk grootverbruik inclusief belastingen"
                 />
                 <div>
-                  <div className="gg-label text-xs mb-2" style={{ color: 'var(--ink-soft)' }}>Energielabel gebouw</div>
-                  <div className="flex flex-wrap gap-1 mb-2">
+                  <div className="gg-label text-xs mb-3" style={{ color: 'var(--ink-soft)' }}>Energielabel gebouw</div>
+                  <div className="flex flex-wrap gap-1 mb-3">
                     {Object.keys(HEAT_DEMAND).map(l => (
                       <button key={l} onClick={() => setLabel(l)} className={`gg-label-btn ${label === l ? 'active' : ''}`}>{l}</button>
                     ))}
@@ -176,7 +176,7 @@ export default function GroenGebouwSalesTool() {
                   <div className="gg-label text-xs opacity-80">Verschil per kWh warmte</div>
                   <div className="gg-display text-3xl font-semibold">
                     {eurDelta > 0 ? `${fmt(eurDelta, 0)}% goedkoper` : `${fmt(Math.abs(eurDelta), 0)}% duurder`}
-                    <span className="text-base leading-7 font-normal opacity-80 ml-2">met warmtepomp</span>
+                    <span className="text-base leading-7 leading-7 font-normal opacity-80 ml-2">met warmtepomp</span>
                   </div>
                 </div>
               </div>
@@ -184,10 +184,10 @@ export default function GroenGebouwSalesTool() {
           </section>
 
           {/* ===== BUILDING OPEX CALCULATOR ===== */}
-          <section className="mb-20">
+          <section className="mb-30">
             <div className="gg-label text-xs mb-4" style={{ color: 'var(--ink-soft)' }}>03 · Jaaropex per gebouw — kantoor of school</div>
             <div className="gg-card p-8 md:p-12">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
                 <div className="md:col-span-1">
                   <InputField
                     label="Vloeroppervlak"
@@ -198,7 +198,7 @@ export default function GroenGebouwSalesTool() {
                     hint="Verwarmd vloeroppervlak (BVO) — MKB+ sweet spot 500-1.500 m²"
                   />
                   <div className="mt-6 p-4" style={{ background: 'var(--bg)', border: '1px solid var(--rule)' }}>
-                    <div className="gg-label text-xs mb-2" style={{ color: 'var(--ink-soft)' }}>Aannames uit dashboard</div>
+                    <div className="gg-label text-xs mb-3" style={{ color: 'var(--ink-soft)' }}>Aannames uit dashboard</div>
                     <div className="text-sm gg-mono space-y-1">
                       <div>Label: <strong>{label}</strong></div>
                       <div>Warmtevraag: <strong>{heatDemand} kWh/m²/jr</strong></div>
@@ -324,7 +324,7 @@ function SideBySideDiagram() {
 function InputField({ label, unit, value, min, max, step, onChange, hint }) {
   return (
     <div>
-      <div className="gg-label text-xs mb-2" style={{ color: 'var(--ink-soft)' }}>{label}</div>
+      <div className="gg-label text-xs mb-3" style={{ color: 'var(--ink-soft)' }}>{label}</div>
       <div className="flex items-baseline gap-2">
         <input
           type="number"
@@ -340,14 +340,14 @@ function InputField({ label, unit, value, min, max, step, onChange, hint }) {
       </div>
       <input
         type="range"
-        className="gg-input mt-3"
+        className="gg-input mt-4"
         value={value}
         min={min}
         max={max}
         step={step}
         onChange={(e) => onChange(parseFloat(e.target.value))}
       />
-      {hint && <div className="text-xs mt-2" style={{ color: 'var(--ink-soft)' }}>{hint}</div>}
+      {hint && <div className="text-xs mt-4" style={{ color: 'var(--ink-soft)' }}>{hint}</div>}
     </div>
   );
 }
@@ -363,7 +363,7 @@ function OutputBar({ title, icon, value, unit, color, bgColor, formula }) {
         € {fmt(value, 3)}
       </div>
       <div className="text-sm mt-1" style={{ color: 'var(--ink-soft)' }}>{unit}</div>
-      <div className="text-xs gg-mono mt-3 pt-3" style={{ color: 'var(--ink-soft)', borderTop: `1px dashed ${color}40` }}>
+      <div className="text-xs gg-mono mt-4 pt-3" style={{ color: 'var(--ink-soft)', borderTop: `1px dashed ${color}40` }}>
         = {formula}
       </div>
     </div>
@@ -394,7 +394,7 @@ function ResultCard({ title, icon, primaryLabel, primaryValue, rows, color }) {
 function SavingsCell({ label, value, sub, positive }) {
   return (
     <div className="p-6" style={{ borderRight: '1px solid var(--rule)' }}>
-      <div className="gg-label text-xs mb-2" style={{ color: 'var(--ink-soft)' }}>{label}</div>
+      <div className="gg-label text-xs mb-3" style={{ color: 'var(--ink-soft)' }}>{label}</div>
       <div className="gg-display text-3xl font-semibold leading-tight" style={{ color: positive ? 'var(--green-deep)' : 'var(--gas)' }}>{value}</div>
       <div className="text-xs mt-1" style={{ color: 'var(--ink-soft)' }}>{sub}</div>
     </div>
@@ -410,7 +410,7 @@ function RuleCard({ icon, title, rules }) {
       </div>
       <ol className="space-y-3">
         {rules.map((rule, i) => (
-          <li key={i} className="flex gap-3 text-sm leading-relaxed">
+          <li key={i} className="flex gap-3 text-sm leading-7">
             <span className="gg-mono text-xs flex-shrink-0 mt-0.5" style={{ color: 'var(--green)', minWidth: 18 }}>0{i + 1}</span>
             <span style={{ color: 'var(--ink)' }}>{rule}</span>
           </li>
@@ -419,5 +419,6 @@ function RuleCard({ icon, title, rules }) {
     </div>
   );
 }
+
 
 
