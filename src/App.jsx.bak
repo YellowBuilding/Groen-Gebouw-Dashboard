@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+﻿import React, { useState, useMemo } from 'react';
 import { Flame, Zap, Thermometer, Wind, Sun, Battery, Plug, ArrowRight, TrendingDown, Leaf } from 'lucide-react';
 
 // ===== CONSTANTS (NL realiteit) =====

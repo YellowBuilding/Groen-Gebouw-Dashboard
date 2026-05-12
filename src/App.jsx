@@ -99,7 +99,7 @@ export default function GroenGebouwSalesTool() {
           </header>
 
           {/* ===== HERO VISUAL: SIDE-BY-SIDE COMPARISON ===== */}
-          <section className="mb-30">
+          <section className="mb-16">
             <div className="gg-label text-xs mb-4" style={{ color: 'var(--ink-soft)' }}>01 · Het verschil in één plaatje</div>
             <div className="p-8 md:p-12" style={{ background: '#0E1A14' }}>
               <SideBySideDiagram />
@@ -112,7 +112,7 @@ export default function GroenGebouwSalesTool() {
           </section>
 
           {/* ===== DASHBOARD: €/kWh warmte ===== */}
-          <section className="mb-30">
+          <section className="mb-16">
             <div className="gg-label text-xs mb-4" style={{ color: 'var(--ink-soft)' }}>02 · Dashboard — kosten per kWh warmte</div>
             <div className="gg-card p-8 md:p-12">
 
@@ -184,7 +184,7 @@ export default function GroenGebouwSalesTool() {
           </section>
 
           {/* ===== BUILDING OPEX CALCULATOR ===== */}
-          <section className="mb-30">
+          <section className="mb-16">
             <div className="gg-label text-xs mb-4" style={{ color: 'var(--ink-soft)' }}>03 · Jaaropex per gebouw — kantoor of school</div>
             <div className="gg-card p-8 md:p-12">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
