@@ -279,44 +279,37 @@ export default function GroenGebouwSalesTool() {
 function SideBySideDiagram() {
   return (
     <svg viewBox="0 0 940 250" className="w-full h-auto" style={{ maxHeight: 380 }}>
-      {/* === WARMTEPOMP (left) === */}
-      {/* Input — Omgevingswarmte (light green, top) */}
-      <rect x="20" y="30" width="180" height="100" fill="#8FD8A1" />
-      <text x="110" y="74" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="17" fontWeight="500" fill="#0E1A14">Omgevings-</text>
-      <text x="110" y="94" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="17" fontWeight="500" fill="#0E1A14">warmte</text>
+      {/* === GASKETEL (left) === */}
+      <rect x="20" y="30" width="180" height="150" fill="#888888" />
+      <text x="110" y="112" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Gas</text>
 
-      {/* Input — Groene elektriciteit (dark green, bottom) */}
-      <rect x="20" y="130" width="180" height="50" fill="#2E8055" />
-      <text x="110" y="151" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Groene</text>
-      <text x="110" y="169" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">elektriciteit</text>
+      <path d="M 200 30 L 395 30 L 400 44 L 395 58 L 200 58 Z" fill="#E84545" />
+      <text x="298" y="48" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Verlies</text>
 
-      {/* Output — Verlies (red chevron, top) — full width, aligned left with Warmte */}
-      <path d="M 200 30 L 395 30 L 400 41 L 395 52 L 200 52 Z" fill="#E84545" />
-      <text x="298" y="46" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Verlies</text>
+      <path d="M 200 58 L 395 58 L 400 119 L 395 180 L 200 180 Z" fill="#2DBA5C" />
+      <text x="298" y="122" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Warmte</text>
 
-      {/* Output — Warmte (bright green chevron) — height 128, total output stack = 150 */}
-      <path d="M 200 52 L 395 52 L 400 116 L 395 180 L 200 180 Z" fill="#2DBA5C" />
-      <text x="298" y="120" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Warmte</text>
+      {/* === WARMTEPOMP (right) === */}
+      <rect x="510" y="30" width="180" height="100" fill="#8FD8A1" />
+      <text x="600" y="74" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="17" fontWeight="500" fill="#0E1A14">Omgevings-</text>
+      <text x="600" y="94" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="17" fontWeight="500" fill="#0E1A14">warmte</text>
 
-      {/* === GASKETEL (right) === */}
-      {/* Input — Gas (gray) */}
-      <rect x="510" y="30" width="180" height="150" fill="#888888" />
-      <text x="600" y="112" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Gas</text>
+      <rect x="510" y="130" width="180" height="50" fill="#2E8055" />
+      <text x="600" y="151" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Groene</text>
+      <text x="600" y="169" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">elektriciteit</text>
 
-      {/* Output — Verlies (full width, aligned left with Warmte, slightly thicker than WP to hint at lower efficiency) */}
-      <path d="M 690 30 L 885 30 L 890 44 L 885 58 L 690 58 Z" fill="#E84545" />
-      <text x="788" y="48" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Verlies</text>
+      <path d="M 690 30 L 885 30 L 890 41 L 885 52 L 690 52 Z" fill="#E84545" />
+      <text x="788" y="46" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Verlies</text>
 
-      {/* Output — Warmte (height 122, total output stack = 150) */}
-      <path d="M 690 58 L 885 58 L 890 119 L 885 180 L 690 180 Z" fill="#2DBA5C" />
-      <text x="788" y="122" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Warmte</text>
+      <path d="M 690 52 L 885 52 L 890 116 L 885 180 L 690 180 Z" fill="#2DBA5C" />
+      <text x="788" y="120" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Warmte</text>
 
       {/* === BOTTOM LABELS === */}
-      <text x="210" y="208" textAnchor="middle" fontFamily="Bricolage Grotesque, sans-serif" fontSize="12" fontWeight="600" fill="#8FD8A1" letterSpacing="0.14em">WARMTEPOMP</text>
-      <text x="210" y="232" textAnchor="middle" fontFamily="Bricolage Grotesque, sans-serif" fontSize="12" fontWeight="500" fill="#8FD8A1" letterSpacing="0.14em" opacity="0.75">280%–450% EFFICIËNTIE</text>
+      <text x="210" y="208" textAnchor="middle" fontFamily="Bricolage Grotesque, sans-serif" fontSize="12" fontWeight="600" fill="#AAAAAA" letterSpacing="0.14em">GASKETEL</text>
+      <text x="210" y="232" textAnchor="middle" fontFamily="Bricolage Grotesque, sans-serif" fontSize="12" fontWeight="500" fill="#AAAAAA" letterSpacing="0.14em" opacity="0.75">85%–95% EFFICIËNTIE</text>
 
-      <text x="700" y="208" textAnchor="middle" fontFamily="Bricolage Grotesque, sans-serif" fontSize="12" fontWeight="600" fill="#AAAAAA" letterSpacing="0.14em">GASKETEL</text>
-      <text x="700" y="232" textAnchor="middle" fontFamily="Bricolage Grotesque, sans-serif" fontSize="12" fontWeight="500" fill="#AAAAAA" letterSpacing="0.14em" opacity="0.75">85%–95% EFFICIËNTIE</text>
+      <text x="700" y="208" textAnchor="middle" fontFamily="Bricolage Grotesque, sans-serif" fontSize="12" fontWeight="600" fill="#8FD8A1" letterSpacing="0.14em">WARMTEPOMP</text>
+      <text x="700" y="232" textAnchor="middle" fontFamily="Bricolage Grotesque, sans-serif" fontSize="12" fontWeight="500" fill="#8FD8A1" letterSpacing="0.14em" opacity="0.75">280%–450% EFFICIËNTIE</text>
     </svg>
   );
 }

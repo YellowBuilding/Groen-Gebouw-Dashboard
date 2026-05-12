@@ -283,11 +283,11 @@ function SideBySideDiagram() {
       <rect x="20" y="30" width="180" height="150" fill="#888888" />
       <text x="110" y="112" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Gas</text>
 
-      <path d="M 200 30 L 395 30 L 400 44 L 395 58 L 200 58 Z" fill="#E84545" />
-      <text x="298" y="48" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Verlies</text>
+      <path d="M 200 30 L 395 30 L 400 41 L 395 52 L 200 52 Z" fill="#E84545" />
+      <text x="298" y="46" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="14" fontWeight="500" fill="white">Verlies</text>
 
-      <path d="M 200 58 L 395 58 L 400 119 L 395 180 L 200 180 Z" fill="#2DBA5C" />
-      <text x="298" y="122" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Warmte</text>
+      <path d="M 200 52 L 395 52 L 400 116 L 395 180 L 200 180 Z" fill="#2DBA5C" />
+      <text x="298" y="120" textAnchor="middle" fontFamily="IBM Plex Sans, sans-serif" fontSize="20" fontWeight="500" fill="white">Warmte</text>
 
       {/* === WARMTEPOMP (right) === */}
       <rect x="510" y="30" width="180" height="100" fill="#8FD8A1" />
